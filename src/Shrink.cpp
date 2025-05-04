@@ -54,7 +54,7 @@ void CShrink::onWindowFocus(PHLWINDOW pWindow, HANDLE pHandle) {
 
         pWindow->m_realSize->setValue(GOALSIZE * PANIMATION->value());
         pWindow->m_realPosition->setValue(GOALPOS + GOALSIZE / 2.f -
-                                           pWindow->m_vRealSize->value() / 2.f);
+                                           pWindow->m_realSize->value() / 2.f);
       });
 
   m_sShrinkAnimation->setCallbackOnEnd(
