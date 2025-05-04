@@ -128,7 +128,7 @@ static void onActiveWindowChange(void *self, std::any data) {
       return;
     }
 
-    if (PWINDOW->m_bIsFloating && !**PANIMATEFLOATING) {
+    if (PWINDOW->m_isFloating && !**PANIMATEFLOATING) {
       hyprfocus_log(LOG, "Floating window, not animating");
       g_pPreviouslyFocusedWindow = PWINDOW;
       return;
